@@ -1,0 +1,61 @@
+{
+    "rooms": [
+      {
+        "id": 101,
+        "type": "Single",
+        "name": "Standard Single Room",
+        "price": 100,
+        "features": ["TV", "WiFi", "Air Conditioning"]
+      },
+      {
+        "id": 102,
+        "type": "Double",
+        "name": "Standard Double Room",
+        "price": 150,
+        "features": ["TV", "WiFi", "Air Conditioning", "Mini Bar"]
+      },
+      {
+        "id": 201,
+        "type": "Suite",
+        "name": "Deluxe Suite",
+        "price": 300,
+        "features": ["TV", "WiFi", "Air Conditioning", "Mini Bar", "Balcony"]
+      }
+    ],
+    "roomTypes": [
+      {
+        "type": "Single",
+        "description": "Egyágyas szoba, mely egy vendég számára készült."
+      },
+      {
+        "type": "Double",
+        "description": "Két vendég számára kialakított szoba, melyben egy dupla ágy vagy két egyszemélyes ágy található."
+      },
+      {
+        "type": "Suite",
+        "description": "Luxus apartman típusú szoba, extra helyiségekkel és prémium szolgáltatásokkal."
+      }
+    ],
+    "services": [
+      {
+        "id": 1,
+        "name": "Restaurant",
+        "description": "Helyszíni gourmet étterem, amely nemzetközi ízeket kínál."
+      },
+      {
+        "id": 2,
+        "name": "Spa",
+        "description": "Teljes körű wellness és spa szolgáltatások, beleértve a masszázsokat és arckezeléseket."
+      },
+      {
+        "id": 3,
+        "name": "Conference Rooms",
+        "description": "Modern konferenciatermek üzleti megbeszélések és rendezvények számára."
+      },
+      {
+        "id": 4,
+        "name": "Concierge",
+        "description": "Személyre szabott vendégfogadási és concierge szolgáltatások a maximális kényelemért."
+      }
+    ]
+  }
