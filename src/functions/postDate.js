@@ -1,12 +1,14 @@
-import { addDoc } from "firebase/firestore";
-import getMyDatabase from "../firebase/getDataBase"
+import { addDoc, collection } from "firebase/firestore";
+import getAppdb from "../firebase/getDataBase";
 
 async function postDate(obj) {
-
-    const db = getMyDatabase();
-
-    const collection = await collection(db , 'foglalas')
-    await addDoc(collection,obj)
+    console.log(obj)
+    const db = getAppdb();
+    console.log(db)
+    const collref = collection(db , 'foglalas')
+    await addDoc(collref,obj)
     
     
 }
+
+export default postDate;

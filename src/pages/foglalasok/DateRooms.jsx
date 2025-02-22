@@ -2,6 +2,7 @@ import DefaultInput from "../../shared/DefaultInput";
 import DefaultChecBox from "../../shared/DefaultChecBox";
 import { useLoaderData } from "react-router-dom";
 import getFormObj from "../../functions/getFormObj";
+import postDate from "../../functions/postDate";
 
 
 const DateRooms = () =>{
@@ -25,8 +26,8 @@ const DateRooms = () =>{
         event.preventDefault()
 
         const formObj = getFormObj(event)
-
-        await postDataToFireBase(formObj)
+        console.log(formObj)
+        await postDate(formObj)
 
 
     }

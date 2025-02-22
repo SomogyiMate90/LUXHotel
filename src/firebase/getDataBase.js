@@ -1,15 +1,15 @@
-import { getApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import getFireBaseApp from "./getApp";
 
 
-export default function getMyDatabase(){
 
-    let db = null;
+let appDb = null;
 
-    if(!db){
-        db = getFirestore( getApp())
+export default function getApp(){
+
+    if(!appDb){
+        appDb = getFirestore(getFireBaseApp());
     }
 
-    return db;
-
+    return appDb;
 }

@@ -1,12 +1,18 @@
 import { initializeApp } from "firebase/app";
 import firebaseConfig from "./firebasConfig";
 
-export default function getApp(){
-    let app = null;
 
-    if(!app){
-        app = initializeApp(firebaseConfig)
+
+let firBaseApp = null;
+
+
+
+export default function getFireBaseApp(){
+
+    if(!firBaseApp){
+        firBaseApp = initializeApp(firebaseConfig)
     }
 
-    return app;
+
+    return firBaseApp;
 }
